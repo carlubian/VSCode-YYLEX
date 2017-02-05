@@ -1,0 +1,73 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "YYLEX",
+	"patterns": [
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#configurations"
+		},
+		{
+			"include": "#inline"
+		},
+		{
+			"include": "#actions"
+		},
+		{
+			"include": "#commentBlock"
+		},
+		{
+			"include": "#commentLine"
+		}
+	],
+	"repository": {
+		"sections": {
+			"patterns": [{
+				"name": "keyword.control.yylex",
+				"match": "%%"
+			}]
+		},
+		"configurations": {
+			"patterns": [{
+				"name": "entity.name.function.yylex",
+				"match": "%[^{%].*\n"
+			}]
+		},
+		"inline": {
+			"name": "entity.name.function.yylex",
+			"begin": "%{",
+			"end": "%}",
+			"contentName": "entity.name.class.yylex"
+		},
+		"actions": {
+			"name": "constant.character.yylex",
+			"begin": "[ |\t]{",
+			"end": "}[ |\t|\n]",
+			"contentName": "entity.name.class.yylex",
+			"patterns": [
+				{
+					"name": "entity.name.class.yylex",
+					"begin": "Tokens\\.",
+					"end": "[; )+\\-\\]]",
+					"contentName": "variable.language.yylex"
+				}
+			]
+		},
+		"commentBlock": {
+			"name": "comment.block.yylex",
+			"begin": "\\/\\*[ |\t|\n]",
+			"end": "[ |\t|\n]\\*\\/",
+			"contentName": "comment.block.yylex"
+		},
+		"commentLine": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "\\/\\/[ |\t|\n].*\n"
+				}
+			]
+		}
+	},
+	"scopeName": "text.java.yylex"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "yylex",
+    "displayName": "YYLEX",
+    "description": "Provides support for yylex files within Visual Studio Code",
+    "version": "1.0.1",
+    "publisher": "carlubian",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "yylex",
+            "aliases": ["YYLEX", "yylex"],
+            "extensions": [".l"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "yylex",
+            "scopeName": "text.java.yylex",
+            "path": "./syntaxes/yylex.tmLanguage.json"
+        }]
+    }
+}
