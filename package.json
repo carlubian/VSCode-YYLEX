@@ -2,7 +2,7 @@
     "name": "yylex",
     "displayName": "YYLEX",
     "description": "Provides support for yylex files within Visual Studio Code",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "publisher": "carlubian",
     "engines": {
         "vscode": "^1.5.0"

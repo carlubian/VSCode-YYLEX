@@ -38,7 +38,19 @@
 			"name": "entity.name.function.yylex",
 			"begin": "%{",
 			"end": "%}",
-			"contentName": "entity.name.class.yylex"
+			"contentName": "entity.name.class.yylex",
+			"patterns": [
+				{
+					"name": "comment.block.yylex",
+					"begin": "\\/\\*[ |\t|\n]",
+					"end": "\\*\\/[ |\t|\n]",
+					"contentName": "comment.block.yylex"
+				},
+				{
+					"name": "comment.line",
+					"match": "\\/\\/[ |\t|\n].*\n"
+				}
+			]
 		},
 		"actions": {
 			"name": "constant.character.yylex",
@@ -51,13 +63,23 @@
 					"begin": "Tokens\\.",
 					"end": "[; )+\\-\\]]",
 					"contentName": "variable.language.yylex"
+				},
+				{
+					"name": "comment.block.yylex",
+					"begin": "\\/\\*[ |\t|\n]",
+					"end": "\\*\\/[ |\t|\n]",
+					"contentName": "comment.block.yylex"
+				},
+				{
+					"name": "comment.line",
+					"match": "\\/\\/[ |\t|\n].*\n"
 				}
 			]
 		},
 		"commentBlock": {
 			"name": "comment.block.yylex",
 			"begin": "\\/\\*[ |\t|\n]",
-			"end": "[ |\t|\n]\\*\\/",
+			"end": "\\*\\/[ |\t|\n]",
 			"contentName": "comment.block.yylex"
 		},
 		"commentLine": {
