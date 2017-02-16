@@ -60,7 +60,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.class.yylex",
-					"begin": "Tokens\\.",
+					"begin": "(Tokens|Parser)\\.",
 					"end": "[; )+\\-\\]]",
 					"contentName": "variable.language.yylex"
 				},

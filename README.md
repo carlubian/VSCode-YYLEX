@@ -22,6 +22,10 @@ When writing a '%{' brace, a single '}' will be inserted, instead of the corresp
 
 ### 1.1.0
 
+Various fixes and improvements.
+
+### 1.1.0
+
 Comments (both line and block) inside an action or inline code will be properly colored as such.
 
 Fixed an edge case where the end of a comment block wouldn't be found.
