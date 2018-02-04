@@ -1,4 +1,8 @@
-# YYLEX Extension
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/carlubian.yylex.svg)](https://marketplace.visualstudio.com/items?itemName=carlubian.yylex)
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/carlubian.yylex.svg)](https://marketplace.visualstudio.com/items?itemName=carlubian.yylex)
+<hr/>
+
+![VSCode-YYLEX](https://carlubian.azurewebsites.net/images/YYLEX.png?maxAge=2592000 "VSCode-YYLEX")
 
 Provides support for yylex files within VS Code.
 
@@ -19,6 +23,10 @@ There are two ways of using this extension:
 When writing a '%{' brace, a single '}' will be inserted, instead of the corresponding '%}'.
 
 ## Release Notes
+
+### 1.1.3
+
+Updated branding and marketplace page.
 
 ### 1.1.0
 

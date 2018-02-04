@@ -1,9 +1,19 @@
 {
     "name": "yylex",
-    "displayName": "YYLEX",
+    "displayName": "VSCode-YYLEX",
     "description": "Provides support for yylex files within Visual Studio Code",
-    "version": "1.1.1",
+    "version": "1.1.3",
     "publisher": "carlubian",
+    "icon": "images/icon-YYLEX.png",
+    "homepage": "https://github.com/carlubian/VSCode-YYLEX",
+    "galleryBanner": {
+        "color": "#007ACC",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/carlubian/VSCode-YYLEX.git"
+    },
     "engines": {
         "vscode": "^1.5.0"
     },
